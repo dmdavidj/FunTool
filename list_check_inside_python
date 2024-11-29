@@ -1,0 +1,9 @@
+# package list check inside python
+
+import subprocess
+
+# pip list 명령을 Python 코드로 실행
+result = subprocess.run(['pip', 'list'], capture_output=True, text=True)
+
+# 결과 출력
+print(result.stdout)
